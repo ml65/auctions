@@ -1,0 +1,708 @@
+<div class="vehicle-card" id="lot_{$id}">
+
+        <div class="row align-items-center mb-3">
+            <div class="col-12 col-lg-5">
+                <h1 class="mb-0">{$model_name} {$modification_name}</h1>
+            </div>
+            <div class="col-12 col-md-4 col-lg text-left  my-3 my-lg-0">
+Продавец: <span class="black-font">{$seller}</span><br><a href="#" onclick="showAddress('{$city_name} {$view_place}');return false;"><span class="icon header-address-icon-1 mr-1"></span>{$city_name}</a>
+            </div>
+
+            <div class="col-auto col-lg-2 text-left text-lg-center">
+<a href="#" onclick="trgFav({$id}); $(this).find('span.icon').toggleClass('active'); return false;">
+    <span class="icon favorite-icon-big" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="В избранное"></span>
+</a>
+</div>
+        </div>
+        <!-- End Model Name & Location &  Favorite Buttons -->
+        
+        <div class="row">
+            <div class="col-12 col-lg params-block order-1 order-lg-1 mt-0">
+<div class="row call-me-block mt-0">
+<div class="col-12">
+<div class="price mb-3">
+                    <span class="sm-font">Стартовая цена:</span> <span class="black-font" id="bidNum_{$id}">{$start_price} р.</span>
+<span class="min_price_lot xs-font my-1">{$price_text}</span><span class="price_step_lot xs-font mb-1">Шаг аукциона: <strong>{$price_step} р.</strong></span></div>
+<div class="row mt-2 bids">
+<div class="col-12">
+<a href="#" data-toggle="modal" data-target="#login_modal" class="btn btn-success btn-xs btn-outline">Авторизация</a></div>
+</div>
+</div>
+</div>
+<!-- User ID-->
+                <div class="user-id black-font mt-2">
+                    iD: {$id} ({$type_text})<br>
+<div>Начало торгов: {$fdate_start}</div>
+<div>Окончание торгов: {$fdate_end}</div>
+</div>
+                <!-- End User ID -->
+                <!-- Icons -->
+                <div class="row align-items-center d-flex my-3">
+<div class="col-12">
+</div>
+</div>
+                <!-- End Icons -->
+                
+                </div>
+<div class="col-12 col-lg-8 order-2 order-lg-2">
+                <!-- Flickity HTML init -->
+                <div class="carousel carousel-main flickity-enabled is-draggable" tabindex="0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flickity-viewport" style="height: 460px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><div class="carousel-cell is-selected" style="position: absolute; left: 0%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/3927902b3fac1b01cce3fc656fc56849.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/3927902b3fac1b01cce3fc656fc56849.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 100%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/3dbb7ef9c09035f3c67d4db92953a7eb.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/3dbb7ef9c09035f3c67d4db92953a7eb.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 200%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/5faf8d8820a30d6ad62d40792b7905c0.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/5faf8d8820a30d6ad62d40792b7905c0.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 300%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/bbae827a628ff2aaae241e3a4c63c389.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/bbae827a628ff2aaae241e3a4c63c389.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 400%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/a47c6b51268328e14f50711360dced2f.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/a47c6b51268328e14f50711360dced2f.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 500%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/dd8b5776bb00e6cc3ebd63b804062754.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/dd8b5776bb00e6cc3ebd63b804062754.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 600%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/e649c1c882ca563eaf60b8c57989c50a.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/e649c1c882ca563eaf60b8c57989c50a.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 700%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/09d4a0fa4f26e3590aeac7b203185c6c.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/09d4a0fa4f26e3590aeac7b203185c6c.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 800%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/9c9249e6861bec5464daaeecc9f9e4d5.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/9c9249e6861bec5464daaeecc9f9e4d5.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 900%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/008a9a19f8697a2f4c66fe9b2b6eaa8c.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/008a9a19f8697a2f4c66fe9b2b6eaa8c.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1000%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/8afb061b9fcc979ddb7e05b79ca90d0d.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/8afb061b9fcc979ddb7e05b79ca90d0d.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1100%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/037487e95e9e68472f912d62592a738a.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/037487e95e9e68472f912d62592a738a.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1200%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/3b622c27062a51caae00724616a2405b.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/3b622c27062a51caae00724616a2405b.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1300%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/fb42cb02b80f3340a3c8b4fd4e0aa2ee.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/fb42cb02b80f3340a3c8b4fd4e0aa2ee.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1400%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/b84fa2f6aec2f84eed8a770e81236978.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/b84fa2f6aec2f84eed8a770e81236978.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1500%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1a809ac64e4e45d246f34e4c32edae63.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1a809ac64e4e45d246f34e4c32edae63.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1600%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/d5ccfd156353ef7b85f1b75a6306e5aa.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/d5ccfd156353ef7b85f1b75a6306e5aa.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1700%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/d284ded2a04709214080bcb46817394d.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/d284ded2a04709214080bcb46817394d.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1800%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/d8ca80681fc174bafffb16416a09335c.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/d8ca80681fc174bafffb16416a09335c.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 1900%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/62a07cbe3d3b735b13d007c60257d4be.jpg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/62a07cbe3d3b735b13d007c60257d4be.jpg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2000%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886850_whatsapp_image_2021-09-11_at_16.22.21_1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886850_whatsapp_image_2021-09-11_at_16.22.21_1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2100%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886851_whatsapp_image_2021-09-11_at_16.22.22.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886851_whatsapp_image_2021-09-11_at_16.22.22.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2200%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.23.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.23.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2300%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886851_whatsapp_image_2021-09-11_at_16.22.22_1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886851_whatsapp_image_2021-09-11_at_16.22.22_1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2400%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.26_1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.26_1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2500%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.26.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.26.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2600%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_dvigatel.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_dvigatel.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2700%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_vin.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_vin.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2800%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.23_1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.23_1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 2900%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.24_1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.24_1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 3000%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.24.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886854_whatsapp_image_2021-09-11_at_16.22.24.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 3100%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.27.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_whatsapp_image_2021-09-11_at_16.53.27.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 3200%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886855_diga1.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886855_diga1.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div><div class="carousel-cell" aria-hidden="true" style="position: absolute; left: 3300%;">
+                        <div class="card-carousel-image w-100" style="background-image: url('/upload/1631886856_diga2.jpeg')">
+                            <!-- Lightbox Icon Link -->
+                            <div class="lightbox-button">
+                                <a href="/upload/1631886856_diga2.jpeg" data-lightbox="carimg">
+                                    <span class="icon lightbox-icon"></span>
+                                </a>
+                            </div>
+                            <!-- End Icon Lightbox -->
+                        </div>
+                    </div></div></div><button class="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 30,50 L 60,100 L 75,100 L 45,50  L 75,0 L 60,0 Z" class="arrow"></path></svg></button><button class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 30,50 L 60,100 L 75,100 L 45,50  L 75,0 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button></div>
+                <div class="carousel carousel-nav thumbnails mt-2 flickity-enabled is-draggable" tabindex="0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flickity-viewport" style="height: 74px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(-0.27%);"><div class="carousel-thumb is-nav-selected is-selected" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/3927902b3fac1b01cce3fc656fc56849.jpg&quot;); position: absolute; left: 0%;"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/3dbb7ef9c09035f3c67d4db92953a7eb.jpg&quot;); position: absolute; left: 10.14%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/5faf8d8820a30d6ad62d40792b7905c0.jpg&quot;); position: absolute; left: 20.27%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/bbae827a628ff2aaae241e3a4c63c389.jpg&quot;); position: absolute; left: 30.41%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/a47c6b51268328e14f50711360dced2f.jpg&quot;); position: absolute; left: 40.55%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/dd8b5776bb00e6cc3ebd63b804062754.jpg&quot;); position: absolute; left: 50.68%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/e649c1c882ca563eaf60b8c57989c50a.jpg&quot;); position: absolute; left: 60.82%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/09d4a0fa4f26e3590aeac7b203185c6c.jpg&quot;); position: absolute; left: 70.96%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/9c9249e6861bec5464daaeecc9f9e4d5.jpg&quot;); position: absolute; left: 81.1%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/008a9a19f8697a2f4c66fe9b2b6eaa8c.jpg&quot;); position: absolute; left: 91.23%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/8afb061b9fcc979ddb7e05b79ca90d0d.jpg&quot;); position: absolute; left: 101.37%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/037487e95e9e68472f912d62592a738a.jpg&quot;); position: absolute; left: 111.51%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/3b622c27062a51caae00724616a2405b.jpg&quot;); position: absolute; left: 121.64%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/fb42cb02b80f3340a3c8b4fd4e0aa2ee.jpg&quot;); position: absolute; left: 131.78%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/b84fa2f6aec2f84eed8a770e81236978.jpg&quot;); position: absolute; left: 141.92%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/1a809ac64e4e45d246f34e4c32edae63.jpg&quot;); position: absolute; left: 152.05%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/d5ccfd156353ef7b85f1b75a6306e5aa.jpg&quot;); position: absolute; left: 162.19%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/d284ded2a04709214080bcb46817394d.jpg&quot;); position: absolute; left: 172.33%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/d8ca80681fc174bafffb16416a09335c.jpg&quot;); position: absolute; left: 182.47%;" aria-hidden="true"></div><div class="carousel-thumb" style="background-image: url(&quot;/impr/?h=100&amp;file=/upload/62a07cbe3d3b735b13d007c60257d4be.jpg&quot;); position: absolute; left: 192
+                
+                
+            </div>
+                
+                </div>
+                <!--end fblock-->
+                <div class="row">
+            <div class="col-12 col-lg params-block order-1 order-lg-1 mt-3">
+            <!-- Info Table -->
+                <div class="info-table">
+                    <table class="w-100">
+                        <tbody>
+                        <tr>
+                            <td>VIN</td>
+                            <td class="black-font"><a href="http://www.gibdd.ru/check/auto/#{$vin}" target="_blank">{$vin}</a></td>
+                        </tr>
+                        <tr>
+                            <td>Год выпуска</td>
+                            <td class="black-font">{$year}</td>
+                        </tr>
+                        <tr>
+                            <td>Пробег</td>
+                            <td class="black-font">{$mileage}</td>
+                        </tr>
+                        <tr>
+                            <td>Кузов</td>
+                            <td class="black-font">{$body}</td>
+                        </tr>
+                        <tr>
+                            <td>Цвет</td>
+                            <td class="black-font">{$color}</td>
+                        </tr>
+                        <tr>
+                            <td>Двигатель</td>
+                            <td class="black-font">{$engine}, {engine_vol} л, {$power} л.с.</td>
+                        </tr>
+                        <tr>
+                            <td>Коробка</td>
+                            <td class="black-font">{$gearbox}</td>
+                        </tr>
+                        <tr>
+                            <td>Привод</td>
+                            <td class="black-font">{$drive}</td>
+                        </tr>
+
+                        <!--<tr>
+                            <td>Владельцы</td>
+                            <td class="black-font">1</td>
+                        </tr>-->
+                        <tr>
+                            <td>Ключи</td>
+                            <td class="black-font">{$key_qty} комплекта</td>
+                        </tr>
+<tr>
+                            <td>ПТС</td>
+                            <td><span class="black-font">{$pts}, № {$pts_no}</span>&nbsp;<a class="btn btn-info btn-block" href="/zip_create/?files=/upload/1631886907_pts.pdf" target="_blank">Скачать ПТС</a></td></tr><tr><td>Рег. знак</td>
+          <td class="black-font">{$reg_plate}</td>
+      </tr>
+        
+      <tr><td> Кол. владельцев </td>
+            <td class="black-font">{$owners_count}</td>
+      </tr>
+</tbody>
+                    </table>
+<a class="btn btn-info btn-block" href="#" onclick="showAddress('{$city_name} {$view_place}');return false;"><strong>Возможен личный осмотр (?)</strong></a>
+<a class="btn btn-info mt-2 btn-block" href="/files/aggr_dkp_auc.pdf" target="_blank"><strong>Образец Договора</strong></a>
+</div>
+                <!-- End Info Table -->
+                <!-- Equipment -->
+<div class="equipment mt-3">
+          <h4> КОМПЛЕКТАЦИЯ </h4>
+          <div class="black-font">
+<div class="row">
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Активная безопасность</h6>
+<ul class="ordered-list">
+<li>Антиблокировочная система</li><li>Антипробуксовочная система</li><li>Система курсовой устойчивости</li><li>Система помощи при экстренном торможении</li><li>Датчик давления в шинах</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Пассивная безопасность</h6>
+<ul class="ordered-list">
+<li>Подушки безопасности</li><li>Подушки безопасности водителя</li><li>Подушки безопасности пассажира</li><li>Боковые передние подушки безопасности</li><li>Оконные шторки безопасности</li><li>Система крепления детских автокресел Isofix / LATCH</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Противоугонная система</h6>
+<ul class="ordered-list">
+<li>Иммобилайзер</li><li>Центральный замок</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Помощь при вождении</h6>
+<ul class="ordered-list">
+<li>Бортовой компьютер</li><li>Круиз-контроль</li><li>Парктроник</li><li>Парктроник задний</li><li>Парктроник передний и задний</li><li>Датчик света</li><li>Датчик дождя</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Комфорт</h6>
+<ul class="ordered-list">
+<li>Усилитель руля</li><li>Активный усилитель руля</li><li>Регулировка руля</li><li>Электростеклоподъемники</li><li>Электростеклоподъемники передние</li><li>Электростеклоподъемники передние и задние</li><li>Электропривод зеркал</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Управление климатом и обогрев</h6>
+<ul class="ordered-list">
+<li>Климат-контроль</li><li>Климат-контроль 2-зонный</li><li>Подогрев сидений</li><li>Подогрев сидений водителя</li><li>Подогрев сидений водителя и пассажира</li><li>Подогрев руля</li><li>Обогрев зеркал</li><li>Обогрев стекол</li><li>Обогрев зоны стеклоочистителей</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Мультимедиа и навигация</h6>
+<ul class="ordered-list">
+<li>Аудиосистема</li><li>CD</li><li>USB</li><li>Bluetooth</li><li>AUX</li><li>Аудиоподготовка</li><li>Мультифункциональное рулевое колесо</li><li>Розетка 12V</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Салон и интерьер</h6>
+<ul class="ordered-list">
+<li>Тканевая обивка салона</li><li>Отделка кожей рычага КПП</li><li>Кожаный руль</li><li>Складывающееся заднее сидение</li><li>Передний центральный подлокотник</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Экстерьер</h6>
+<ul class="ordered-list">
+<li>Размер дисков 17″</li></ul>
+</div>
+<div class="col-12 col-md-6 mt-2">
+<h6 class="panel-title txt-dark mb-1">Освещение</h6>
+<ul class="ordered-list">
+<li>Светодиодные фары</li><li>Противотуманные фары</li><li>Омыватель фар</li></ul>
+</div>
+</div>
+</div></div>  <!-- End Equipment--> </div>
+
+       <!-- Carousel -->
+       <div class="col-12 col-lg-8 order-2 order-lg-2">
+                
+            <div class="mt-4">
+                <h2>Дополнительные данные</h2>
+                Описание автомобиля:  Комплектация: Active (Пакет 1).<br>
+Количество владельцев: 1.<br>
+<br>
+Состояние кузова: присутствует скол на лобовом стекле.<br>
+<br>
+Техническое состояние: диагностика проведена, критических нарушений не выявлено.
+                
+         <div style="margin: 7px 0px 7px 0px;">Дополнительная информация по запросу.</div>
+                   
+         <div style="text-align: justify; margin: 7px 0px 7px 0px;">                   
+          Условия: визуальное и техническое состояние соответствуют пробегу. На кузове автомобиля возможны сколы, полученные в процессе эксплуатации, 
+                соответствующие возрасту и пробегу автомобиля. Автомобиль не является новым, возможны скрытые повреждения, 
+                которые невозможно определить визуальным осмотром или проведенной технической диагностикой в рамках непрофильного сервисного центра. 
+                <br> 
+                Недочеты, влияющие на ценообразование автомобиля указаны в приложенных фото.
+          </div>
+       
+          <div style="margin: 5px 0px 5px 0px; border-bottom:0px green solid">
+            Обратите внимание – необходимо изучать
+            <span onclick="showVin(&quot;{$id}&quot;); return false;" style="font-weight: bold; color: green; cursor:pointer;">АВТОТЕКУ</span> 
+               автомобиля до его приобретения.
+          </div>
+    
+            </div>
+<div class="mt-4">
+<h2>Состояние ЛКП</h2>
+<div class="row">
+<div class="col-12">
+<div id="damage_map"><a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:280px;left:296px;" data-original-title="Дверь задняя левая: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:56px;left:298px;" data-original-title="Дверь задняя правая: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:281px;left:234px;" data-original-title="Дверь передняя левая: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:63px;left:233px;" data-original-title="Дверь передняя правая: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:169px;left:129px;" data-original-title="Капот: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:275px;left:387px;" data-original-title="Крыло заднее левое: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:66px;left:380px;" data-original-title="Крыло заднее правое: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:264px;left:145px;" data-original-title="Крыло переднее левое: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:68px;left:142px;" data-original-title="Крыло переднее правое: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:165px;left:263px;" data-original-title="Крыша: 125">•</a>
+<a href="javascript:void();" tabindex="0" role="button" class="damage_point" data-toggle="popover" data-trigger="focus" title="" data-html="true" data-placement="bottom" data-content="" style="top:167px;left:414px;" data-original-title="Крышка багажника: 125">•</a>
+</div>
+</div>
+<div class="col-12" id="lkp_list">
+<div style="width: 522px; margin: 0 auto">
+<div class="row mb-3" id="lelement_55555">
+<div class="col-12 col-md-8">
+Верхняя часть, Крыша: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55556">
+<div class="col-12 col-md-8">
+Правая сторона, Крыло заднее правое: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55557">
+<div class="col-12 col-md-8">
+Правая сторона, Дверь задняя правая: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55558">
+<div class="col-12 col-md-8">
+Правая сторона, Дверь передняя правая: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55559">
+<div class="col-12 col-md-8">
+Правая сторона, Крыло переднее правое: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55560">
+<div class="col-12 col-md-8">
+Передняя часть, Капот: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55561">
+<div class="col-12 col-md-8">
+Левая сторона, Крыло переднее левое: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55562">
+<div class="col-12 col-md-8">
+Левая сторона, Дверь передняя левая: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55563">
+<div class="col-12 col-md-8">
+Левая сторона, Дверь задняя левая: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55564">
+<div class="col-12 col-md-8">
+Левая сторона, Крыло заднее левое: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+<div class="row mb-3" id="lelement_55565">
+<div class="col-12 col-md-8">
+Задняя часть, Крышка багажника: 125 мкм<br></div>
+<div class="col-12 col-md-4 text-md-right damage_photos">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+            <!-- End Carousel -->
+        </div>
+</div>

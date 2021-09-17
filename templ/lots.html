@@ -1,0 +1,42 @@
+<div class="home-model-items">
+ <!-- Show Models -->
+ <div id="carlist">
+  <div class="row p-2" id="lot-list">
+{$lots}
+  </div>
+  <script>
+    $(document).ready(function () {
+        $(".touchspin").each(function (i) {
+            $(this).TouchSpin({
+                max: 1000000000000,
+                min: parseInt($(this).val()),
+                step: parseInt($(this).data('step'))
+            });
+        });
+        $('#sfpage').val(1);
+    })
+  </script>
+  <style>
+
+    .jq-toast-wrap {
+        width: 320px !important;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .jq-toast-heading {
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .jq-toast-single {
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left;
+    }
+
+  </style>
+ </div>
+</div>

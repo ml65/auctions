@@ -1,0 +1,81 @@
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 model-item-block p-2" id="lot_{$id}" data-tsclose="1632139200" data-location="/auctions/cars-{$cat_addr}-{$category}/lot-{$id}/">
+ <div class="model-item row mx-0" style="flex-direction: column;">
+  <div class="gs-12 col-12 model-carousel px-0">
+   <div id="carouselExampleIndicators{$id}" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+    <ol class="carousel-indicators">
+     <li data-target="#carouselExampleIndicators{$id}" data-slide-to="0" class=""></li>
+     <li data-target="#carouselExampleIndicators{$id}" data-slide-to="1" class=""></li>
+     <li data-target="#carouselExampleIndicators{$id}" data-slide-to="2" class=""></li>
+     <li data-target="#carouselExampleIndicators{$id}" data-slide-to="3" class=""></li>
+     <li data-target="#carouselExampleIndicators{$id}" data-slide-to="4" class=""></li>
+    </ol>
+    <a target="_blank" class="carousel-inner" href="/auctions/cars-{$cat_addr}-{$category}/lot-{$id}/" style="display:block;">
+{$photodiv}
+    </a>
+   </div>
+  </div>
+  <div class="gs-12 model-item-desc-container col-8 col-12">
+   <div class="row">
+    <div class="gs-12 col-12 model-title-icons">
+     <div class="row">
+      <div class="col-10 pr-0 mb-3">
+       <span style="color:#28a745;">Лот № {$id} ({$type_text})</span>
+       <a target="_blank" href="/auctions/cars-{$cat_addr}-{$category}/lot-{$id}/" class="model-name">{$model_name}<br>{$modification_name}</a>
+      </div>
+      <div class="col-2 model-icons text-right">
+       <a href="#" onclick="trgFav({$id});$(this).find('span.icon').toggleClass('active');  return false;">
+        <span class="icon favorite-icon-big" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Избранное"></span>
+       </a>
+      </div>
+      <div class="col-12 pr-0 mb-3">
+       <div class="mb-3 model-params">
+        <ul>
+         <li>VIN:&nbsp;<a data-toggle="tooltip" data-placement="bottom" title="" href="http://www.gibdd.ru/check/auto/#{$vin}" target="_blank" data-original-title="Проверка VIN на сайте ГИБДД">{$vin}</a></li>
+         <li>{$engine_vol} л., {$year} г.</li>
+         <li>Мощность {$power} л.с.</li>
+         <li>{$drive} привод</li>
+         <li>{$mileage} км</li>
+        </ul>
+       </div>
+       <a target="_blank" href="/auctions/cars-{$cat_addr}-{$category}/lot-{$id}/" class="location al-line">• Продавец: {$seller}</a>
+       <a href="#" onclick="showAddress('{$city_name} {$view_place}');return false;" class="location al-line">• Город: {$city_name}</a>
+       <div class="al-line">• Начало торгов: {$date_start}</div>
+       <div class="al-line">• Окончание торгов: {$date_end}</div>
+       <div class="al-line">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="gs-12 col-12 model-price mb-3">
+     <div class="mb-2 mib">
+      <span class="curst">
+       Стартовая цена: <span class="sum-b" id="bidNum_{$id}">{$start_price} р.</span>
+      </span>
+      <span class="min_price"></span>
+      <div class="row h-18">
+       <div class="col-12 col-md-6 stc">
+        <span class="price_step"></span>
+       </div>
+       <div class="col-12 col-md-6 stc" id="setBidStatusInfo_{$id}">
+       </div>
+      </div>
+      <div class="row mt-2 bids">
+       <div class="col-12">
+        <a href="#" data-toggle="modal" data-target="#login_modal" class="a-modal btn btn-success btn-xs btn-outline" onlcick="$('#login_modal').modal('show'); return false;">Авторизация</a>
+       </div>
+      </div>
+     </div>
+     <div>
+     </div>
+    </div>
+    <div class="col-12 btm-block">
+     <div class="row">
+      <div class="gs-12 col-12 model-params">
+       <a target="_blank" href="/auctions/cars-{$cat_addr}-{$category}/lot-{$id}/" class="btn btn-gray w-100">Подробнее</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
