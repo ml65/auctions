@@ -10,7 +10,7 @@ namespace Mls65\Lotlist\Interfaces;
 
 interface LotRepositoryInterface
 {
-     public function getLotList();
+     public function getLotsList();
 
      public function getLot(LotEntity $lot);
 

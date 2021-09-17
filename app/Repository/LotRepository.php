@@ -8,7 +8,7 @@ namespace Mls65\Lotlist\Repository;
 use Mls65\Lotlist\Interfaces\LotRepositoryInterface;
 use Mls65\Lotlist\Entity\LotEntity;
 
-class LotRepository  {
+class LotRepository  implements LotRepositoryInterface {
 
     private $data;
 
@@ -17,13 +17,13 @@ class LotRepository  {
 //
     }
 
-    static public function getLotsList()
+    public function getLotsList()
     {
             return json_decode(file_get_contents( __DIR__ ."/lots.json"),true);
     }
 
 
-    static public function getLot($id) {
+    public function getLot($id) {
     
         $lots = json_decode(file_get_contents( __DIR__ ."/lots.json"),true);
         foreach ($lots as $lot) {
