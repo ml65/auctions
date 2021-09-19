@@ -58,7 +58,7 @@ class LotController {
         $id = $param[1];
 
         $this->lot = $this->lotrepo->getLot($id);
-        // перенести в репозиторий Лота 
+        // обогощение данными перенести в репозиторий Лота 
         if($this->lot["price_min"] > $this->lot["price_now"]) {
             $this->lot["price_text"] = "Минимальная цена не достигнута"; 
         } else {
